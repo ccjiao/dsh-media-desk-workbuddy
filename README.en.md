@@ -33,19 +33,21 @@ All of these are required:
 
 ## Install
 
-### Option 1: install from npm (copy and run)
+### Option 1: install from GitHub source (available now)
+
+```sh
+dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
+```
+
+Replace `web` with the profile you actually use (commonly `web` or `desktop`).
+
+### Option 2: install from npm (pending release)
 
 ```sh
 dsh plugin --profile web add dsh-media-desk-workbuddy
 ```
 
-Replace `web` with the profile you actually use (commonly `web` or `desktop`).
-
-### Option 2: install from GitHub source
-
-```sh
-dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
-```
+The npm package is being prepared; until that command succeeds for you, use the source install above.
 
 ### Option 3: install from a local directory
 

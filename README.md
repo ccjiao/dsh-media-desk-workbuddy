@@ -33,19 +33,21 @@
 
 ## 安装
 
-### 方式一：从 npm 安装（可直接复制）
+### 方式一：从 GitHub 源码安装（当前可用）
+
+```sh
+dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
+```
+
+把 `web` 换成你实际使用的 profile 名即可（常见为 `web` 或 `desktop`）。
+
+### 方式二：从 npm 安装（待发布）
 
 ```sh
 dsh plugin --profile web add dsh-media-desk-workbuddy
 ```
 
-把 `web` 换成你实际使用的 profile 名即可（常见为 `web` 或 `desktop`）。
-
-### 方式二：从 GitHub 源码安装
-
-```sh
-dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
-```
+npm 包正在准备发布；在你看到这条命令成功之前，请用上面的源码安装。
 
 ### 方式三：本地目录安装
 
