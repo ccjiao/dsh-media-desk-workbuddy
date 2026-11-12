@@ -1,0 +1,72 @@
+{
+  "name": "dsh-media-desk-workbuddy",
+  "version": "1.0.0",
+  "description": "自媒体工作台（WorkBuddy 生图版）：一句话记灵感，一键成稿——口播脚本、标题、视频封面、配图和黑白线稿分镜。新增「DSH 生成工具」走 WorkBuddy 生图。",
+  "type": "module",
+  "main": "src/host.js",
+  "exports": {
+    ".": "./src/host.js",
+    "./client": "./dist/client.js",
+    "./bridge": "./bridge/index.js",
+    "./bridge/locale/*.json": "./bridge/locale/*.json",
+    "./bridge/icon": "./bridge/icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "workbuddy",
+    "image-generation",
+    "media-desk"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccjiao/dsh-media-desk-workbuddy.git"
+  },
+  "homepage": "https://github.com/ccjiao/dsh-media-desk-workbuddy#readme",
+  "bugs": "https://github.com/ccjiao/dsh-media-desk-workbuddy/issues",
+  "author": "ccjiao (https://github.com/ccjiao)",
+  "contributors": [
+    {
+      "name": "woniuniuniu (蜗牛的科技笔记)",
+      "url": "https://github.com/woniuniuniu",
+      "note": "author of the upstream dsh-media-desk"
+    }
+  ],
+  "upstream": {
+    "name": "dsh-media-desk",
+    "version": "2.6.2",
+    "author": "woniuniuniu (蜗牛的科技笔记)",
+    "repository": "https://github.com/woniuniuniu/dsh-media-desk",
+    "license": "MIT",
+    "note": "This project vendors the upstream package under MIT and adds a WorkBuddy image-generation bridge."
+  },
+  "files": [
+    "src",
+    "dist",
+    "assets",
+    "bridge",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ]
+}

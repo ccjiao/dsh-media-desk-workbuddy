@@ -1,0 +1,7 @@
+# 自媒体工作台（WorkBuddy 生图版）bundle patch
+# 同一个包提供：工作台 host 半片 + 浏览器半片，以及 WorkBuddy 生图桥接。
+- insert:
+    - id: media-desk
+      name: 'dsh-media-desk-workbuddy'
+    - id: media-desk-workbuddy-bridge
+      name: 'dsh-media-desk-workbuddy/bridge'

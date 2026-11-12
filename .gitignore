@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# build output
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+*.swp
+
+# runtime / local state
+.env
+.env.local
+*.secret
+secrets.env
