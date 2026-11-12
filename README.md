@@ -27,17 +27,25 @@
 
 ## 安装
 
-### 方式一：从 git 安装（推荐）
+### 方式一：从 npm 安装（可直接复制）
 
 ```sh
-dsh plugin --profile <你的profile> add github:ccjiao/dsh-media-desk-workbuddy
+dsh plugin --profile web add dsh-media-desk-workbuddy
 ```
 
-### 方式二：本地目录安装
+把 `web` 换成你实际使用的 profile 名即可（常见为 `web` 或 `desktop`）。
+
+### 方式二：从 GitHub 源码安装
+
+```sh
+dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
+```
+
+### 方式三：本地目录安装
 
 ```sh
 git clone https://github.com/ccjiao/dsh-media-desk-workbuddy.git
-dsh plugin --profile <你的profile> add /绝对路径/dsh-media-desk-workbuddy
+dsh plugin --profile web add ./dsh-media-desk-workbuddy
 ```
 
 安装后**刷新 DSH 页面**；若侧栏仍无入口，重启 DeepSeek Harness（已装插件的模块需重新加载）。

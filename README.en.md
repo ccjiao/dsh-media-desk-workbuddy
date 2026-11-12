@@ -27,17 +27,25 @@ All of these are required:
 
 ## Install
 
-### Option 1: install from git (recommended)
+### Option 1: install from npm (copy and run)
 
 ```sh
-dsh plugin --profile <your-profile> add github:ccjiao/dsh-media-desk-workbuddy
+dsh plugin --profile web add dsh-media-desk-workbuddy
 ```
 
-### Option 2: install from a local directory
+Replace `web` with the profile you actually use (commonly `web` or `desktop`).
+
+### Option 2: install from GitHub source
+
+```sh
+dsh plugin --profile web add github:ccjiao/dsh-media-desk-workbuddy
+```
+
+### Option 3: install from a local directory
 
 ```sh
 git clone https://github.com/ccjiao/dsh-media-desk-workbuddy.git
-dsh plugin --profile <your-profile> add /absolute/path/dsh-media-desk-workbuddy
+dsh plugin --profile web add ./dsh-media-desk-workbuddy
 ```
 
 After installing, **refresh the DSH page**. If the sidebar entry is still missing, restart DeepSeek Harness (installed plugin modules must be reloaded).
